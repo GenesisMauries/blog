@@ -1,6 +1,6 @@
 const articleContainer = document.getElementById('textBlog')
 const fetchData = () => {
-  fetch('/js/data.json', {})
+  fetch('js/data.json', {})
     .catch(error => console.log(`Tienes este problemita: ${error.message}`))
     .then((response) => response.json())
     .then(datos => drawData(datos))
